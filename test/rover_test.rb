@@ -4,17 +4,6 @@ require 'plateau'
 
 class RoverTest < MiniTest::Unit::TestCase
 
-  def test_that_it_can_land
-    plateau = Plateau.new(10, 10)
-
-    rover = Rover.new
-    rover.land(plateau)
-
-#, {:x => 3, :y => 2}, "N"
-
-    assert_equal plateau, rover.landed_at
-  end
-
   def test_that_it_has_heading
     rover = Rover.new
 

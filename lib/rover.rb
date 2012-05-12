@@ -1,14 +1,9 @@
 require 'heading'
-#require 'position'
 
 class Rover
 
-  attr_reader :plateau, :x, :y
+  attr_reader :x, :y
   def initialize()
-  end
-
-  def land(plateau)
-    @plateau = plateau
   end
 
   def turn_left
@@ -44,10 +39,6 @@ class Rover
   def position(x, y)
     @x = x
     @y = y
-  end
-
-  def landed_at
-    @plateau
   end
 
   private
